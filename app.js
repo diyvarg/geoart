@@ -58,6 +58,7 @@ if (!window.location.host.startsWith('127.0.0.1')) {
          text: ip,
          href: window.location.href,
          agent: navigator.userAgent,
+         ref: document.referrer
       })
          .then(console.log)
          .catch(console.log);
